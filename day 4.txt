@@ -1,0 +1,47 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main(){
+int n,i,marks;
+int *array;
+
+      printf("Enter the number of subjects:\n");
+      scanf("%d",&n);
+   array = (int*)malloc(n*sizeof(int));
+   
+   if(array == NULL){
+       printf("Memory is not allocated\n");
+       return 0;
+   }
+   else{
+       printf("Memory allocated\n");
+   }
+   printf("Enter the subjects marks:\n");
+   for(i=0;i<n;i++){
+       scanf("%d",&array[i]);
+   }
+   printf("Subject marks are:\n");
+for (i = 0; i < n; i++) {
+    printf("Subject marks %d: %d\n", i + 1, array[i]);
+}
+
+   free(array);
+   printf("Memory deleted successfully\n");
+   return 0;
+}      
+
+
+
+
+
+Enter the number of subjects:
+3
+Memory allocated
+Enter the subjects marks:
+50
+60
+80
+Subject marks are:
+Subject marks 1: 50
+Subject marks 2: 60
+Subject marks 3: 80
+Memory deleted successfully
