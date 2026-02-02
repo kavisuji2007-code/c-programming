@@ -1,4 +1,4 @@
-1)
+
 #include<stdio.h>
 
 void myfunction(int num1, int num2){
@@ -27,8 +27,6 @@ Subtraction of numbers:43
 Multiplication of number:728
 Division of numbers:4
 Modulus of numbers:4
-
-2)
 
 #include<stdio.h>
 //global scope
